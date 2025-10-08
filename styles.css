@@ -1,0 +1,371 @@
+  /* good things happening*/
+  :root {
+  --font_size1: 2.0rem;
+  --font_size2: 1.2rem;
+  --font_size3: 0.9rem;
+  --font_size4: 0.5rem;
+  --color1: white;
+  --color2:orange;
+}
+
+
+ .page {
+	 
+	 display:grid;
+	 grid-template-rows: auto auto auto;
+	 grid-template-columns: repeat(12, 1fr);
+ }
+
+  *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+ background-image: url("../images/bg.jpg");
+
+}
+
+
+/* Header */
+header {
+  grid-column: 1 / 12;
+
+  display:flex;
+  gap: 10px;
+  padding: 1px 5px;
+  
+ background-color: #f4f4f4; 
+ background-image: url("../images/red-waves.jpg");
+
+}
+
+.brand { 
+  font-size: var(--font_size1);
+  margin-bottom: 0.2rem;
+  grid-column: 1 / 4;
+}
+
+header .brand p {
+	
+ font-size: var(--font_size3);
+  color: grey;
+}
+
+header .brand h1 {
+	
+  color: grey;
+}
+
+ nav.nav1 {
+  margin-left: auto;
+  margin-top:6.0rem;
+
+ }
+ nav.nav1 a {
+	 color: var(--color1);
+ }
+ 
+ ul li{
+	
+ display:inline;
+ margin-right: 10px; /* spacing between items */
+ grid-row: 1;
+
+}
+  
+
+
+@media screen and (max-width: 1000px) {
+
+}
+
+.consult-btn {
+ 
+  right:0;    
+  height:50px;
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  position:fixed;
+
+}
+
+/* Main layout grid */
+.layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  padding: 2rem;
+
+
+}
+
+main {
+  grid-column: 1 / span 7;
+  grid-row: 1 / 2;
+/*   background-color: #F9F5F0; */
+  background-image: url("../images/city2.jpg");
+  padding: 2rem;
+  border-radius: 50px 50px 30000px 100px; /* bottom-right corner curved */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+main h2 {
+  margin-bottom: 1rem;
+}
+
+main.main-content section
+{
+	padding:5rem;
+}
+
+ .sec_img {
+  width:170px;
+  height:170px;
+  border-radius: 50%;   /* circular image */
+  float: left;          /* text wraps on the right */
+  margin-right: 1.5rem; /* space between image and text */
+  margin-bottom: 1rem;  /* space below image for small screens */
+  object-fit: cover;
+ }
+
+section.cta {
+
+  background-position: center;
+  color: white;  
+  text-align: center; 
+  position: relative;
+  width: 50rem;
+  
+}
+
+
+
+.cta { 
+ 
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); 
+  border-radius:100px 100px 500px 100px;
+}
+
+.cta h2,.cta .btn {
+  position: relative; 
+
+}
+
+
+
+/* Sidebar */
+aside {
+  grid-column: 9 / span 4;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+ /* position: relative; */
+ text-align:center;
+
+}
+
+aside section {
+
+  padding: 1rem;
+  border: 1px solid #ddd;
+   background-color: #F9F5F0;
+   border-radius: 100px;
+   
+  
+}
+
+ 
+aside img {
+	
+	border-radius: 200px 200px 200px 200px;
+	padding:5px;
+	height:200px;
+	
+}
+
+
+ .stats {
+ bottom: 30px;	 
+ position: fixed;	 
+ background-color: orange;
+ left:0 ;
+ border-radius:100px 100px 100px 100px ;
+ }
+ 
+ 
+ .stats ul li{
+	
+ display:inline;
+ margin-right: 10px; /* spacing between items */
+ grid-row: 3;
+
+ 
+ 
+}
+  
+
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background-color: #222;
+  color: white;
+  gap: 0.5rem;
+}
+
+footer a {
+  color: #00aaff;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+
+
+
+/*.============================media queries section==============================.*/
+
+/* Responsive font scaling */
+
+
+/* font size and color for h1 TINMUK  */
+
+@media screen and (max-width: 1800px) {
+
+  section.cta{
+	  width:30rem;
+  }
+  
+}
+
+@media screen and (max-width: 1500px) {
+  h1 {
+    font-size: 35px;
+    color: orange;
+  }
+   
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+  .consult-btn {
+    
+    background-color: green;
+ background-color: hsla(100, 60%, 60%, 0.3);
+  }
+  
+ aside section {
+
+ background-color: hsla(100, 50%, 35%, 0.3);
+   border-radius: 100px;
+   
+  
+} 
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  html {
+    font-size: 14px;
+	color: blue;
+  }	
+	
+h1 {
+	font-size: 20px;
+	color: white;
+  }
+  
+ .consult-btn {
+  background-color: orange;
+  height:30px ;
+  } 
+  
+  header p {
+	color: white !important;
+  }
+  
+
+.cta::before { 
+
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius:100px 100px 1000px 1000px;
+  height:100px;
+  width:40rem;
+}
+
+aside section {
+
+ background-color: hsla(200, 100%, 40%, 0.3);
+   border-radius: 100px;
+   
+  
+}
+
+/* testing for commit*/
+  
+ 	aside img {
+	
+	border-radius: 200px 200px 200px 200px;
+	padding:5px;
+	width:200px;
+} 
+
+ 
+}
+
+
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr; /* one column layout */
+  }
+
+  main {
+    grid-column: 1 / -1;  /* span full width */
+    grid-row: auto;       /* let it flow naturally */
+  }
+
+  aside {
+    grid-column: 1 / -1;  /* also span full width */
+    grid-row: auto;       /* come after main */
+  }
+}
+
+@media screen and (max-width: 479px) {
+  html {
+    font-size: 12px;
+  }
+  
+  /*
+  header, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ */
+
+
+  .layout {
+    grid-template-columns: 1fr; /* stack columns */
+  }  
+  
+  
+}
+
