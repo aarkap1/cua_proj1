@@ -8,13 +8,14 @@
   --color2:orange;
 }
 
-
+/*
  .page {
 	 
 	 display:grid;
 	 grid-template-rows: auto auto auto;
 	 grid-template-columns: repeat(12, 1fr);
  }
+   */
 
   *{
   box-sizing: border-box;
@@ -22,13 +23,28 @@
   padding: 0;
 }
 
+
+body {
+  display: grid;
+	 grid-template-rows: auto auto auto;
+	 grid-template-columns: repeat(12, 1fr);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
  background-image: url("../images/bg.jpg");
 
-}
-
+} 
+*/
 
 /* Header */
 header {
