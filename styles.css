@@ -25,7 +25,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
- background-image: url("../images/bg.jpg");
+ background-image: url("images/bg.jpg");
 
 }
 
@@ -39,7 +39,7 @@ header {
   padding: 1px 5px;
   
  background-color: #f4f4f4; 
- background-image: url("../images/red-waves.jpg");
+ background-image: url("images/red-waves.jpg");
 
 }
 
@@ -112,7 +112,7 @@ main {
   grid-column: 1 / span 7;
   grid-row: 1 / 2;
 /*   background-color: #F9F5F0; */
-  background-image: url("../images/city2.jpg");
+  background-image: url("images/city2.jpg");
   padding: 2rem;
   border-radius: 50px 50px 30000px 100px; /* bottom-right corner curved */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
