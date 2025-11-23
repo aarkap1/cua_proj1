@@ -1,23 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C82SE96G2Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C82SE96G2Z');
-</script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TINMUK Advisory</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script>v-->
 </head>
 
 <body>
@@ -33,10 +21,10 @@
 
       <nav class="nav1">
         <ul>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Partners</a></li>
-        </ul> 
+          <li><a class="test1" href="#">Contact Us</a></li>
+          <li><a class="test1" href="#">About Us</a></li>
+          <li><a class="test1" href="#">Partners</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -70,27 +58,32 @@
 
     </main>
 
-
     <!-- ================= SIDEBAR ================= -->
-    <aside class="side-content">
+
+
+ 	<template id="aside-template">
       <section>
-        <h3>Tax</h3>
-        <p>Optimizing strategies</p>
-        <img src="images/tax.jpg" alt="Tax advisory image">
+        <h3></h3>
+        <p></p>
+        <img src="" alt="">
       </section>
 
-      <section>
-        <h3>Advisory</h3>
-        <p>Delivering insights</p>
-        <img src="images/advisory.jpg" alt="Advisory image">
+      <section class="side-content">
+        <h3></h3>
+        <p></p>
+        <img src="" alt="">
       </section>
 
-      <section>
-        <h3>Assurance</h3>
-        <p>Audits, risk assessments, and financial reporting</p>
-        <img src="images/assurance.jpg" alt="Assurance image">
+      <section class="side-content">
+        <h3></h3>
+        <p></p>
+        <img src="" alt="">
       </section>
-    </aside>
+	  </template>
+	  
+	  <aside class="side-content" id="aside-container"> </aside>
+ 
+
 
     <!-- ================= STATS ================= -->
     <nav class="stats">
@@ -112,7 +105,10 @@
     </footer>
   </div>
 
-<script src = "js/main.js"></script>
+
+<script src="data/content.js"></script>
+
+
 
 </body>
 </html>
