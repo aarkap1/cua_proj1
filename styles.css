@@ -142,7 +142,8 @@ header {
 
 .side-content img {
   width: 100%;
-  border-radius: 12px;
+  height: auto;
+  border-radius: 100px 100px 100px 12px;
   margin-top: 0.5rem;
 }
 
@@ -194,7 +195,7 @@ footer a:hover {
   }
 
   .side-content section {
-    flex: 1 0 30%;
+    flex: 10 30%;
   }
 
   header {
