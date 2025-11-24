@@ -98,6 +98,77 @@
 
 
 
+<!-- ================= MODAL BOX ================= -->
+<div class="modal" id="appointmentModal">
+  <div class="modal-card">
+    
+    <div class="modal-header">
+      <div class="logo-pill">TM</div>
+      <div>
+        <div class="brand-title">TINMUK Appointment</div>
+        <div class="brand-sub">Schedule your consultation</div>
+      </div>
+      <button class="close-btn" id="closeModalBtn">&times;</button>
+    </div>
+
+    <div class="modal-body" id="formScreen">
+      <form id="appointmentForm">
+
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" id="fullname" required>
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="field">
+          <label>Phone Number</label>
+          <input type="text" id="phone" required>
+        </div>
+
+        <div class="field">
+          <label>Service Needed</label>
+          <select id="service" required>
+            <option value="">-- Select a Service --</option>
+            <option>Tax Advisory</option>
+            <option>Audit & Assurance</option>
+            <option>Consulting</option>
+            <option>Business Compliance</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Preferred Date</label>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="field">
+          <label>Preferred Time</label>
+          <input type="time" id="time" required>
+        </div>
+
+        <div class="actions-bottom">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- SUCCESS SCREEN -->
+    <div class="success-screen" id="successScreen">
+      <h2>Thank you!<br>You will be contacted soon.</h2>
+      <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="data/modal.js"> </script>
+
 
 </body>
 </html>

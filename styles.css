@@ -8,6 +8,17 @@
   --color-bg: #f9f9f9;
   --color-dark: #222;
   --color-light: #fff;
+  
+  /*======FOR MODAL======*/
+--brand-blue: #0b5f8a;
+--brand-green: #0a7f3f;
+--muted: #556;
+--card-bg: #ffffff;
+--radius: 14px;
+--max-width: 520px;
+  
+  
+  
 } 
 
 /* ================= GLOBAL STYLES ================= */
