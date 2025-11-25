@@ -98,26 +98,23 @@ console.log(test2)
 ////////////////////////////////////////////aside template ////////////////
 
 const asideContent = [
-  { 	
-    title: "Tax",
-    text: "Optimizing strategies",
-    image: "images/tax.jpg",
-    alt: "Tax advisory image"
-  },
-  { 	
-    title: "Advisory",
-    text: "Delivering insights",
-    image: "images/advisory.jpg",
-    alt: "Advisory image"
-  },
-  { 	
-    title: "Assurance",
-    text: "Audits, risk assessments, and financial reporting",
-    image: "images/assurance.jpg",
-    alt: "Assurance image"
-  }
-];
+{ 	title: "Tax",
+	text : "Optimizing strategies" ,
+	image: "images/tax.jpg" ,
+	alt :  alt="Tax advisory image" ,
+},
+{ 	title: "Advisory",
+	text : "Delivering insights",
+	image: "images/advisory.jpg",
+	alt : "Advisory image",
+},
+{ 	title: "Assurance",
+	text : "Audits, risk assessments, and financial reporting",
+	image: "images/assurance.jpg",
+	alt:  "Assurance image",
+}
 
+]; 
 
 
 const template3 = document.getElementById("aside-template")
