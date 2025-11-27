@@ -5,7 +5,7 @@
 const mainContentData = [
 {
 	image: "images/curved-metal-bars.jpg",
-	title: "About TINMUK Advisory",
+	title: "TINMUK : Advisory, Tax and Assurance Services",
 	text: "A leading financial services firm dedicated to providing expert Tax, Advisory, and Assurance solutions to businesses and individuals.We combine local knowledge and global expertise to deliver results you can trust."
 }
 ];
@@ -97,24 +97,34 @@ console.log(test2)
 
 ////////////////////////////////////////////aside template ////////////////
 
-const asideContent = [
-{ 	title: "Tax",
-	text : "Optimizing strategies" ,
-	image: "images/tax.jpg" ,
-	alt :  alt="Tax advisory image" ,
-},
-{ 	title: "Advisory",
-	text : "Delivering insights",
-	image: "images/advisory.jpg",
-	alt : "Advisory image",
-},
-{ 	title: "Assurance",
-	text : "Audits, risk assessments, and financial reporting",
-	image: "images/assurance.jpg",
-	alt:  "Assurance image",
-}
 
-]; 
+const asideContent = [
+  {
+    title: "Tax",
+    text: "Optimizing strategies",
+    image: "images/tax.jpg",
+    alt: "Tax advisory image",
+    id: "taxModal",
+    url: "tax.html"        // ← link to page
+  },
+  {
+    title: "Advisory",
+    text: "Delivering insights",
+    image: "images/advisory.jpg",
+    alt: "Advisory image",
+    id: "advisoryModal",
+    url: "advisory.html"   // ← link to page
+  },
+  {
+    title: "Assurance",
+    text: "Audits, risk assessments, and financial reporting",
+    image: "images/assurance.jpg",
+    alt: "Assurance image",
+    id: "assuranceModal",
+    url: "assurance.html"  // ← link to page
+  }
+];
+
 
 
 const template3 = document.getElementById("aside-template")
@@ -129,3 +139,6 @@ asideContent.forEach(item=>{
 	
 	container3.appendChild(clone);
 });
+
+
+

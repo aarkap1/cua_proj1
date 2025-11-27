@@ -28,6 +28,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -165,18 +169,52 @@ header {
 /* ================= STATS ================= */
 .stats {
   grid-column: 1 / -1;
+  position: fixed;
+  margin-top: 950px;
   text-align: center;
   background: var(--color-accent);
   padding: 0.5rem 0;
   border-radius: 20px;
+  right: 10px;
 }
 
 .stats li {
+	
   display: inline;
   margin: 0 1rem;
   font-weight: bold;
   color: var(--color-dark);
 }
+
+/* ================= FLOATING NAV ================= */
+.float-nav {
+  grid-column: 1 / -1;
+  position: fixed;
+  margin-top: 800px;
+  text-align: center;
+  background: var(--color-accent);
+  padding: 0.5rem 0;
+  border-radius: 20px;
+  right: 10px;
+}
+
+.float-nav  li {
+	
+  display: inline;
+  margin: 0 1rem;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+/* ============================NAV SECTION====================*/
+.nav-section{
+	
+  grid-column: 1 / -1;
+
+	
+}
+
+/*=============================END NAV SECTION=============================*/
 
 /* ================= FOOTER ================= */
 footer {
