@@ -139,6 +139,25 @@ header {
   font-weight: bold;
 }
 
+.history-class{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--color-light);
+  padding: 2rem;
+  border-radius: 20px;
+  text-color:white;
+	
+}
+
+.partners-class{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--color-light);
+  padding: 2rem;
+  border-radius: 20px;
+  text-color: white;
+}
+
 /* ================= SIDEBAR ================= */
 .side-content {
   grid-column: 9 / -1;
