@@ -5,7 +5,8 @@
   --font-size-sm: 0.9rem;
   --color-primary: #0077cc;
   --color-accent: orange;
-  --color-bg: #f9f9f9;
+ /* --color-bg: #f9f9f9; */
+  --color-bg: rgba(249, 249, 249, 0.85);
   --color-dark: #222;
   --color-light: #fff;
   
@@ -100,7 +101,8 @@ header {
 /* ================= MAIN CONTENT ================= */
 .main-content {
   grid-column: 1 / span 8;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.60); 
+
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
