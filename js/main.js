@@ -3,31 +3,31 @@
 // object that stores all main content data
 
 const mainContentData = [
-{
-	image: "images/curved-metal-bars.jpg",
-	title: "TINMUK : Advisory, Tax and Assurance Services",
-	text: "A leading financial services firm dedicated to providing expert Tax, Advisory, and Assurance solutions to businesses and individuals.We combine local knowledge and global expertise to deliver results you can trust."
-}
+  {
+    image: "images/curved-metal-bars.jpg",
+    title: "TINMUK : Advisory, Tax and Assurance Services",
+    text: "A leading financial services firm dedicated to providing expert Tax, Advisory, and Assurance solutions to businesses and individuals.We combine local knowledge and global expertise to deliver results you can trust."
+  }
 ];
 
- //Select template and container
- const template = document.getElementById("template-data")
- const container = document.getElementById("main-content-container")
- 
- //looping through data to populate template
- mainContentData.forEach(item=>{
- const clone = template.content.cloneNode(true);
- clone.querySelector("img").src = item.image;
- clone.querySelector("img").alt = item.title;
- clone.querySelector("h2").textContent = item.title;
- clone.querySelector("p").textContent = item.text;
- 
- container.appendChild(clone);
- 
- });
- 
- 
- // data/content.js
+//Select template and container
+const template = document.getElementById("template-data")
+const container = document.getElementById("main-content-container")
+
+//looping through data to populate template
+mainContentData.forEach(item => {
+  const clone = template.content.cloneNode(true);
+  clone.querySelector("img").src = item.image;
+  clone.querySelector("img").alt = item.title;
+  clone.querySelector("h2").textContent = item.title;
+  clone.querySelector("p").textContent = item.text;
+
+  container.appendChild(clone);
+
+});
+
+
+// data/content.js
 
 // Object representing your "Why Choose Us" section
 // Simple data object
@@ -56,7 +56,7 @@ const container2 = document.getElementById("main-content-container2");
 // Loop through data and fill template
 mainContentData2.forEach(item => {
   const clone = template2.content.cloneNode(true);
-  
+
   // Fill image and title
   clone.querySelector("img").src = item.image;
   clone.querySelector("img").alt = item.alt;
@@ -87,7 +87,7 @@ console.log(test2)
 // forEach
 
 // loop adding li items.. for (let i = 0; i <50; i++)
-	// liElement.classList.add("test");
+// liElement.classList.add("test");
 //  	liElement.textContent="New-item";
 //	fragment.appendChild(lielement);
 
@@ -130,14 +130,14 @@ const asideContent = [
 const template3 = document.getElementById("aside-template")
 const container3 = document.getElementById("aside-container")
 
-asideContent.forEach(item=>{
-	const clone = template3.content.cloneNode(true);
-	clone.querySelector("h3").textContent = item.title;
-	clone.querySelector("p").textContent = item.text;
-	clone.querySelector("img").src = item.image;
-	clone.querySelector("img").alt = item.alt;
-	
-	container3.appendChild(clone);
+asideContent.forEach(item => {
+  const clone = template3.content.cloneNode(true);
+  clone.querySelector("h3").textContent = item.title;
+  clone.querySelector("p").textContent = item.text;
+  clone.querySelector("img").src = item.image;
+  clone.querySelector("img").alt = item.alt;
+
+  container3.appendChild(clone);
 });
 
 

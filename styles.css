@@ -5,22 +5,22 @@
   --font-size-sm: 0.9rem;
   --color-primary: #0077cc;
   --color-accent: orange;
- /* --color-bg: #f9f9f9; */
+  /* --color-bg: #f9f9f9; */
   --color-bg: rgba(249, 249, 249, 0.85);
   --color-dark: #222;
   --color-light: #fff;
-  
+
   /*======FOR MODAL======*/
---brand-blue: #0b5f8a;
---brand-green: #0a7f3f;
---muted: #556;
---card-bg: #ffffff;
---radius: 14px;
---max-width: 520px;
-  
-  
-  
-} 
+  --brand-blue: #0b5f8a;
+  --brand-green: #0a7f3f;
+  --muted: #556;
+  --card-bg: #ffffff;
+  --radius: 14px;
+  --max-width: 520px;
+
+
+
+}
 
 /* ================= GLOBAL STYLES ================= */
 * {
@@ -101,11 +101,11 @@ header {
 /* ================= MAIN CONTENT ================= */
 .main-content {
   grid-column: 1 / span 8;
-  background: rgba(255, 255, 255, 0.60); 
+  background: rgba(255, 255, 255, 0.60);
 
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-content section {
@@ -141,17 +141,17 @@ header {
   font-weight: bold;
 }
 
-.history-class{
+.history-class {
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
   color: var(--color-light);
   padding: 2rem;
   border-radius: 20px;
-  text-color:white;
-	
+  text-color: white;
+
 }
 
-.partners-class{
+.partners-class {
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
   color: var(--color-light);
@@ -173,9 +173,9 @@ header {
   border-radius: 20px;
   text-align: center;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width:70%;
-  height:auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  height: auto;
 }
 
 .side-content img {
@@ -183,8 +183,8 @@ header {
   height: auto;
   border-radius: 10px 10px 100px 12px;
   margin-top: 0.5rem;
-  width:50%;
-  height:auto;
+  width: 50%;
+  height: auto;
 }
 
 /* ================= STATS ================= */
@@ -200,7 +200,7 @@ header {
 }
 
 .stats li {
-	
+
   display: inline;
   margin: 0 1rem;
   font-weight: bold;
@@ -219,8 +219,8 @@ header {
   right: 10px;
 }
 
-.float-nav  li {
-	
+.float-nav li {
+
   display: inline;
   margin: 0 1rem;
   font-weight: bold;
@@ -228,11 +228,11 @@ header {
 }
 
 /* ============================NAV SECTION====================*/
-.nav-section{
-	
+.nav-section {
+
   grid-column: 1 / -1;
 
-	
+
 }
 
 /*=============================END NAV SECTION=============================*/
